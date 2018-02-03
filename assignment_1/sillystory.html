@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            Silly story generator
+        </title>
+        <script type="text/javascript">
+            function sillystory(){
+                var customname = document.getElementById("getName").value;
+
+                var story = "It was a fine winter evening. Nabin decided to go eat on a restaurant. He went to restreplaced. He ordered a foodreplaced. He seemed to enjoy his food to the last bite. He paid 500 Rupees for his food. Then he walked home on the moonlit night.";
+
+                var storyrestaurant = ["Hamro Restaurant and Bar","Good Food Kitchen","Jhingu Che"];
+                var storyfood = ["small chicken pizza","chicken C MoMo","chicken burger"];
+
+                var replacerest = storyrestaurant[Math.floor(Math.random()*storyrestaurant.length)];
+                var replacefood= storyfood[Math.floor(Math.random()*storyfood.length)];
+
+                finalstory = story;
+                finalstory = finalstory.replace('restreplaced',replacerest);
+                finalstory = finalstory.replace('foodreplaced',replacefood);
+            
+                if (customname !== '')
+                    finalstory = finalstory.replace('Nabin',customname);
+
+                if (document.getElementById("dollars").checked)
+                    finalstory = finalstory.replace("500 Rupees","5 Dollars");
+
+                var pTag = document.getElementById("displayStory");
+                pTag.innerText = finalstory;
+                pTag.style.padding = 20;
+            }
+        </script>
+    </head>
+
+    <body style="padding:20px;">
+        Enter custom name: <input id="getName" type="text" name = "customname">
+        
+        <br><br>
+        <form>
+            <input type="radio" name = "currency" value="nepali" checked>Nepali<br>
+            <input id = "dollars" type="radio" name = "currency" value="us">US
+        </form>
+
+        <br>
+        <button onClick="sillystory()">Generate my story</button>
+        
+        <br><br>
+        <p id="displayStory" style="background-color:lightseagreen; width:25%;"></p>
+    </body>
+
+</html>
