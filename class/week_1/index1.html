@@ -1,0 +1,26 @@
+<html>
+
+	<head>
+		<script type="text/javascript">
+			function displayName(){
+
+				var name = document.getElementById("name").value;
+				var pTag = document.getElementById("displayArea");
+				pTag.innerText = name;
+			}
+		</script>
+	</head>
+
+
+	
+	<body>
+
+		<input id = "name" type = "text" name = "name"/>
+
+		<button onClick = "displayName();">Display</button>
+
+		<p id = "displayArea"></p>
+
+	</body>
+
+</html>

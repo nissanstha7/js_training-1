@@ -1,0 +1,57 @@
+<html>
+
+	<head>
+		<script type="text/javascript">
+
+			function validate(){
+
+				var hobbies = document.getElementsByClassName('hobby');
+
+				var checked = false;
+				for(var i = 0; i < hobbies.length; i++){
+
+					if(hobbies[i].checked){
+						checked = true;
+						break;
+					}
+				}
+
+				if(!checked){
+					console.error("Validation error");
+					return false;
+                }
+				else {
+                    console.log('success');
+                    return true;
+                }
+
+			}
+
+		</script>
+	</head>
+
+
+	
+	<body>
+
+		<form onsubmit="return validate();">
+			<input type="text" id = "name" name= "name"/>
+			<input type="number" id = "age" name = "age"/>
+
+			<br>
+			<label>Gender</label>
+			<input type = "radio" name="gender" value = "Male"/> Male
+			<input type = "radio" name="gender" value = "Female"/> Female
+
+			<br><br>
+			<label>Hobbies</label>
+			<br>
+			Swimming<input type = "checkbox" class = "hobby" name="hobby" value = "Swimming">
+			Reading<input type = "checkbox" class="hobby" name="hobby" value = "Reading">
+
+			<button type="submit">Submit</button>
+		</form>
+
+	</body>
+
+</html>
