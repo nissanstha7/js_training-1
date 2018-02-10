@@ -4,17 +4,15 @@ body{
     margin:0;
 }
 #bigpic{
-    padding:0 auto;
-    margin-bottom:0px;
+    height:450px;
+    text-align:center;
 }
 #big{
-    margin:0 300px;
-    width:50%;
-    height:400px;
+    width:65%;
+    height:450px;
 }
 #smallpic{
-    margin-left:150px;
-    margin-top:0;
+    text-align:center;
 }
 .input{
     width:200px;
