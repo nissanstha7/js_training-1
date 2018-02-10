@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            var mytable = document.getElementById("sumtable");
+
+            for (var i=0; i<5; i++){
+                row.appendChild(tdn1);
+                var row = document.createElement('tr');
+                var tdn1 = document.createElement('td');
+                var tdn2 = document.createElement('td');
+
+                var x=document.createElement("input");
+                x.setAttribute("type","text");
+                
+                tdn1.textContent = x;
+                tdn2.textContent = x;
+                var tdsum = document.createElement('td');
+                tdsum.textContent = tdn1.textContent + tdn2.textContent;
+
+                row.appendChild(tdn1);
+                row.appendChild(tdn2);
+                row.appendChild()
+                
+            }
+        </script>
+    </head>
+
+    <body>
+        <table id ="sumtable" border=1>
+            <tr>
+                <th>num1</th>
+                <th>num1</th>
+                <th>sum</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>
