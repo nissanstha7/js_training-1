@@ -14,7 +14,7 @@ for (var i=0; i<5; i++){
     picture.onclick = function(e){setPicture(e.target.src)};
 }
 
-function setPicture(imgSrc){
-    bigpic.setAttribute('src',imgSrc);
+function setPicture(bigPic){
+    bigpic.setAttribute('src',bigPic);
 }
 
