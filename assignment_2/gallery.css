@@ -8,12 +8,13 @@ body{
     margin-bottom:0px;
 }
 #big{
-    margin:auto 250px;
+    margin:0 300px;
     width:50%;
     height:400px;
 }
 #smallpic{
-    margin-left:100px;
+    margin-left:150px;
+    margin-top:0;
 }
 .input{
     width:200px;
